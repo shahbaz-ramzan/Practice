@@ -61,3 +61,27 @@ function maxOrMin(arr) {
   return [min, max];
 }
 console.log(maxOrMin(arr));
+
+// Write a function that takes an array of strings and returns a new array with the first letter of each string capitalized.
+// Input: ['hello', 'world', 'nice', 'to', 'meet', 'you']
+// Output: ['Hello', 'World', 'Nice', 'To', 'Meet', 'You']
+
+var arr = ["hello", "world", "nice", "to", "meet", "you"];
+
+function capitalized(arr) {
+  return arr.map((str) => str.charAt(0).toUpperCase() + str.slice(1));
+}
+
+console.log(capitalized(arr));
+
+// Write a function that takes an array of numbers and returns a new array with the numbers in reverse order.
+// Input: [1, 2, 3, 4, 5]
+// Output: [5, 4, 3, 2, 1]
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+function reverse(arr) {
+  let reverse = arr.reverse();
+  return reverse;
+}
+console.log(reverse(arr));
