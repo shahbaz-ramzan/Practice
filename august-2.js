@@ -35,3 +35,29 @@ function findPalindrome(arr) {
 }
 
 console.log(findPalindrome(arr));
+
+// Write a function that takes an array of numbers and returns the highest and lowest numbers in the array as an array.
+// Input: [1, 2, 3, 4, 5]
+// Output: [5, 1]
+
+var arr = [8, 6, 4, 2, 0, 7];
+
+function maxAndMin(arr) {
+  let sortedarr = arr.sort((a, b) => a - b);
+  let result = [];
+  let min = sortedarr[0];
+  let max = sortedarr[sortedarr.length - 1];
+  result.push(min, max);
+  return result;
+}
+console.log(maxAndMin(arr));
+
+// another way
+
+function maxOrMin(arr) {
+  let min = Math.min(...arr);
+  let max = Math.max(...arr);
+
+  return [min, max];
+}
+console.log(maxOrMin(arr));
