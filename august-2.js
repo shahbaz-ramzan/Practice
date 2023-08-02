@@ -73,3 +73,15 @@ function capitalized(arr) {
 }
 
 console.log(capitalized(arr));
+
+// Write a function that takes an array of numbers and returns a new array with the numbers in reverse order.
+// Input: [1, 2, 3, 4, 5]
+// Output: [5, 4, 3, 2, 1]
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+function reverse(arr) {
+  let reverse = arr.reverse();
+  return reverse;
+}
+console.log(reverse(arr));
