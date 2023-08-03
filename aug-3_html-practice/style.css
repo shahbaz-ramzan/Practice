@@ -3,3 +3,20 @@ h1 {
   background-color: rgb(11, 164, 178);
   text-align: center;
 }
+
+.flex-container {
+  background-color: darkviolet;
+  display: flex;
+  /* flex-direction: row; */
+  /* flex-wrap: row wrap; */
+  /* justify-content: space-around; */
+  align-content: center;
+}
+.flex-container > div {
+  background-color: aliceblue;
+  padding: 20px;
+  margin: 10px;
+  font-size: 30px;
+  width: 100px;
+  line-height: 75px;
+}
