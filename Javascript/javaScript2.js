@@ -74,3 +74,51 @@ function largest(a,b,c){
 }
 
 largest(6,9,2)
+
+// Q13: find the prime number
+
+function findPrime(number){
+    let isprime=true
+    if(number===1){
+        console.log("1 is not prime or compositive number")
+    }else if(number>1){
+        for(let i=2;i<number;i++){
+            if (number%i===0){
+                isprime=false
+                break
+            }
+
+        }
+    }
+    if(isprime){
+        // console.log(`${number} is prime number`)
+        return number
+
+    }else{
+        console.log(`${number} is not prime number`)
+    }
+
+}
+findPrime(4)
+
+var arr=[1,2,3,4,5,5,6]
+let findprime=(number)=>{
+
+    if(number===1){
+        return "number is not prime"
+    }else if(number>1){
+        for(let i=2;i<number;i++){
+            if(number%i===0){
+                return number
+            }
+            else{
+                return " number is not prime"
+            }
+        }
+    }
+
+}
+
+let result=arr.map((item)=>findprime(item))
+
+console.log(result)
