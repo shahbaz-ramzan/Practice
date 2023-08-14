@@ -101,24 +101,51 @@ function findPrime(number){
 }
 findPrime(4)
 
-var arr=[1,2,3,4,5,5,6]
-let findprime=(number)=>{
+// var arr=[1,2,3,4,5,5,6]
+// let findprime=(number)=>{
 
-    if(number===1){
-        return "number is not prime"
-    }else if(number>1){
-        for(let i=2;i<number;i++){
-            if(number%i===0){
-                return number
-            }
-            else{
-                return " number is not prime"
-            }
+//     if(number===1){
+//         return "number is not prime"
+//     }else if(number>1){
+//         for(let i=2;i<number;i++){
+//             if(number%i===0){
+//                 return number
+//             }
+//             else{
+//                 return " number is not prime"
+//             }
+//         }
+//     }
+
+// }
+
+// let result=arr.map((item)=>findprime(item))
+
+// console.log(result)
+
+
+var arr = [1, 2, 3, 4, 5, 5, 6];
+
+let isPrime = (number) => {
+    if (number <= 1) {
+        return false; // 1 is not a prime number
+    }
+    
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            return false; // If number is divisible by any other number, it's not prime
         }
     }
+    
+    return true; // If no divisors were found, it's prime
+};
 
-}
+let result = arr.map((item) => {
+    if (isPrime(item)) {
+        return `${item} is prime`;
+    } else {
+        return `${item} is not prime`;
+    }
+});
 
-let result=arr.map((item)=>findprime(item))
-
-console.log(result)
+console.log(result);
