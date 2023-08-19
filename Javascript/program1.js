@@ -10,8 +10,8 @@ function countString(str, letter) {
   return count;
 }
 
-const string = prompt("Enter a string: ");
-const letterToCheck = prompt("Enter a letter to check: ");
+const string = "shahbaz ramzan";
+const letterToCheck = "a";
 
 const result = countString(string, letterToCheck);
 
