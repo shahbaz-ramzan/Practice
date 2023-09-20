@@ -119,4 +119,4 @@ let every = array.every((el) => el >= 0);
 console.log("every", every);
 // find method is used  find the vlaue that is exist in the array or not
 let find = array.find((el) => el === 8);
-// console.log("find 8:", find);
+console.log("find 8:", find);
