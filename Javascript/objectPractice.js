@@ -258,3 +258,4 @@ function getLongest(obj) {
 }
 let result = getLongest(obj);
 console.log(result);
+// not completed yet
