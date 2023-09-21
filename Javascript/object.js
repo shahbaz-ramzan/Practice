@@ -217,3 +217,44 @@
 // for (let key in obj) {
 //   console.log(obj[key]);
 // }
+
+// Write a function that returns the keys of an object in an array.
+// Input: {name: 'John', age: 25, city: 'New York'}
+// Output: ['name', 'age', 'city']
+
+// function getKeys(obj) {
+//   let keys = [];
+//   for (let key in obj) {
+//     keys.push(key);
+//   }
+//   return keys;
+// }
+// // /anonymous object/
+// const result = getKeys({
+//   name: "John",
+//   age: 25,
+//   city: "New York",
+// });
+// console.log(result);
+
+// 6.Write a function that returns the length of the longest property value in an object.
+// Input: {name: 'John', age: 25, city: 'New York'}
+// Output: 8
+
+let obj = {
+  name: "John",
+  age: 25,
+  city: "New York",
+};
+
+function getLongest(obj) {
+  let longest = 0;
+  for (let key in obj) {
+    if (Object.properties(obj).length > longest) {
+      longest = Object.properties(obj).length;
+    }
+  }
+  return longest;
+}
+let result = getLongest(obj);
+console.log(result);
