@@ -160,14 +160,60 @@
 
 // console.log(length);
 
-let obj = {
-  name: "shahbaz",
-  age: 25,
-  city: "lahore",
-  state: "punjab",
-  country: "pakistan",
-};
+// let obj = {
+//   name: "shahbaz",
+//   age: 25,
+//   city: "lahore",
+//   state: "punjab",
+//   country: "pakistan",
+// };
 
-let count = Object.keys(obj).length;
+// let count = Object.keys(obj).length;
 
-console.log(count);
+// console.log(count);
+
+// 3.Write a function that checks if a given key exists in an object.
+// Input: {name: 'John', age: 25, city: 'New York'}, 'age'
+// Output: true
+
+// let obj = {
+//   name: "John",
+//   age: 25,
+//   city: "New York",
+// };
+
+// function checks(obj) {
+//   for (let key in obj) {
+//     if (key === "age") {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
+// const result = checks(obj);
+// console.log(result);
+
+// Write a function that returns the values of an object in an array.
+// Input: {name: 'John', age: 25, city: 'New York'}
+// Output: ['John', 25, 'New York']
+
+// let obj = {
+//   name: "John",
+//   age: 25,
+//   city: "New York",
+// };
+
+// function getValues(obj) {
+//   let values = [];
+//   for (let key in obj) {
+//     values.push(obj[key]);
+//   }
+//   return values;
+// }
+
+// console.log(getValues(obj));
+
+// for (let key in obj) {
+//   console.log(obj[key]);
+// }
