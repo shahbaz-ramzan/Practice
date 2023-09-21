@@ -99,19 +99,75 @@
 // Input: {name: 'John', age: 25, city: 'New York'}
 // Output: 3
 
-const obj = {
-  name: "john",
+// const obj = {
+//   name: "john",
+//   age: 25,
+//   city: "New York",
+// };
+
+// function countProperties(obj) {
+//   let count = 0;
+//   for (let key in obj) {
+//     count++;
+//   }
+//   return count;
+// }
+
+// const result = countProperties(obj);
+// console.log("value", result);
+
+// Write a function that checks if an object is empty.
+// Input: {}
+// Output: true
+
+// let obj = {};
+
+// function checks(obj) {
+//   // to find length in object we use this code
+//   let length = Object.keys(obj).length;
+//   if (length === 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// const result = checks(obj);
+
+// console.log(result);
+
+// let obj = {};
+// let length = obj.lenght;
+// // it  will give undefined becase length method is used in array
+// console.log(obj.length); // undefined
+
+// let obj = {
+//   name: "shahbaz",
+//   age: 23,
+// };
+
+// let length = Object.keys(obj).length;
+
+// console.log(length);
+
+// let obj = {
+//   name: "shahbaz",
+//   age: 25,
+//   address: "bwp",
+// };
+
+// let length = Object.keys(obj).length;
+
+// console.log(length);
+
+let obj = {
+  name: "shahbaz",
   age: 25,
-  city: "New York",
+  city: "lahore",
+  state: "punjab",
+  country: "pakistan",
 };
 
-function countProperties(obj) {
-  let count = 0;
-  for (let key in obj) {
-    count++;
-  }
-  return count;
-}
+let count = Object.keys(obj).length;
 
-const result = countProperties(obj);
-console.log("value", result);
+console.log(count);
