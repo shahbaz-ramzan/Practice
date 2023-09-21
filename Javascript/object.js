@@ -94,3 +94,24 @@
 // console.log(obj.city);
 // console.log(obj.state);
 // console.log(obj.country);
+
+// Write a function that returns the number of properties in an object.
+// Input: {name: 'John', age: 25, city: 'New York'}
+// Output: 3
+
+const obj = {
+  name: "john",
+  age: 25,
+  city: "New York",
+};
+
+function countProperties(obj) {
+  let count = 0;
+  for (let key in obj) {
+    count++;
+  }
+  return count;
+}
+
+const result = countProperties(obj);
+console.log("value", result);
