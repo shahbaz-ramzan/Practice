@@ -79,3 +79,90 @@
 //   return string.slice(0, length - 1);
 // }
 // console.log(removeLast(string));
+
+// Write a function that takes two strings as input and concatenates them.
+// Sample input: "hello", "world"
+// Expected output: "hello world"
+
+// let string = "hello";
+// let string1 = "world";
+
+// function concatination(string, string1) {
+//   return `${string} , ${string1}`;
+// }
+// console.log(concatination(string, string1));
+
+// 9.Write a function that takes a string as input and returns a new string with all spaces removed.
+// Sample input: "hello world"
+// Expected output: "helloworld"
+
+// let string = "hello world";
+// function removeSpaces(string) {
+//   return string.trim().join();
+// }
+// console.log(removeSpaces(string));
+
+// let string = "hello world";
+
+// function removeSpaces(string) {
+//   return string.replace(/\s/g, "");
+// }
+
+// console.log(removeSpaces(string));
+
+// let string = "helloworld";
+
+// function removeSpaces(string) {
+//   return string.replace(/\s/g, " ");
+// }
+// console.log(removeSpaces(string));
+
+// Write a function that takes a string as input and returns a new string with all vowels removed.
+// Sample input: "hello world"
+// Expected output: "hll wrld"
+
+// let string = "hello world";
+
+// function removeVowels(string) {
+//   return string.replace(/[aeiou]/g, "");
+// }
+
+// console.log(removeVowels(string));
+
+// Write a function that takes a string as input and returns a new string with all consonants removed.
+// Sample input: "hello world"
+// Expected output: "eo o"
+
+// function removeConsonants(inputString) {
+//   const vowels = "aeiouAEIOU";
+//   let stringWithoutConsonants = "";
+
+//   for (let i = 0; i < inputString.length; i++) {
+//     const char = inputString.charAt(i);
+//     if (vowels.includes(char) || char === " ") {
+//       stringWithoutConsonants += char;
+//     }
+//   }
+
+//   return stringWithoutConsonants;
+// }
+
+// const inputString = "hello world";
+// const result = removeConsonants("hello world");
+// console.log(result); // Output: "eo o"
+
+let string = "hello world";
+
+function removeConsonants(string) {
+  const vowels = "AEIOUaeiou";
+  const withoutConsonants = "";
+  for (let i = 0; i < string.length; i++) {
+    const char = string.charAt(i);
+    if (vowels.includes(char) || char === " ") {
+      withoutConsonants += char;
+    }
+  }
+  return withoutConsonants;
+}
+
+console.log(removeConsonants(string));
