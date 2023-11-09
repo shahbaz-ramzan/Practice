@@ -2,3 +2,13 @@
 // Example Input: ['apple', 'banana', 'cherry']
 // Expected Output: [5, 6, 6]
 
+let array=["apple", "banana", "cherry"]
+
+
+function returnLength(array){
+      return array.map((n)=>n.length)
+}
+
+let result=returnLength(array)
+
+console.log(result)
