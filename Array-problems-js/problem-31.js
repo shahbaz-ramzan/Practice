@@ -14,5 +14,3 @@ function removeFirstElement(array){
 
 let result=removeFirstElement(array)
 
-
-console.log(result)
