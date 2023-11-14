@@ -12,3 +12,4 @@ function reverse(array){
 let result=reverse(array)
 
 console.log(result)
+
