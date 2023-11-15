@@ -4,3 +4,16 @@
 
 
 
+let text="hello"
+
+// console.log(Array.from(text))
+
+function stringToArray(text) {
+    return Array.from(text)
+}
+
+
+let result=stringToArray(text)
+
+
+console.log(result)
